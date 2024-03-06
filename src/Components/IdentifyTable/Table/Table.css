@@ -1,0 +1,48 @@
+.table{
+
+}
+
+.table-searchSort{
+    display: flex;
+    justify-content: center;
+    gap: 50%;
+    align-items: center;
+
+}
+
+.table input{
+    outline: none; 
+}
+
+.table-searchBox{
+    padding: 0.1rem;
+}
+
+.table-priorityBox{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.mainTable_header th{
+    font-size: 0.7rem;
+}
+
+.mainTable_body td{
+    font-size: 0.75rem;
+}
+
+.table-priorityBox_input{
+    padding: 0.1rem;
+}
+
+.table-priorityBox_label{
+    font-size: 0.8rem;
+}
+
+.table_buttons{
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    background-color: #d93954;
+    color: white;
+}

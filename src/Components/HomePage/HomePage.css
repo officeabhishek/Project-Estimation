@@ -1,0 +1,73 @@
+.Homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background-color: rgb(43, 43, 43);
+    height: 100%;
+    width: 100%;
+}
+
+.Homepage-main{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 3rem;
+    height: 80vh;
+}
+
+.Homepage_optionsMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-left: 10%;
+}
+
+.Homepage-secondary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Homepage_options{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    align-items: center;
+}
+
+.Homepage-options2{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    align-items: center;
+}
+
+.options{
+    position: relative;
+    background-color: rgb(255, 244, 244);
+    height: 200px;
+    width: 270px;
+}
+
+.options-below{
+    position: relative;
+    height: 100px;
+    width: 250px;
+    background-color: rgb(255, 230, 213);
+}
+
+.options-title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: rgb(60, 60, 60);
+}

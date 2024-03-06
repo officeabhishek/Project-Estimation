@@ -1,0 +1,28 @@
+.root {
+  width: 185px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 16px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.icon_more {
+  width: 24px;
+  height: 24px;
+  overflow: visible;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}
+.icon_chev_down {
+  width: 24px;
+  height: 24px;
+  overflow: visible;
+}
+.icon2 {
+  width: 100%;
+  height: 100%;
+}
