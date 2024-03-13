@@ -6,12 +6,12 @@ const QuickLinks = ()=>{
             <h3 className="QuickLinks_title">QuickLinks</h3>
             <div>
                 <ul class="list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Discover</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Invoices</a></li>
-                    <li><a href="#">Clients</a></li>
-                    <li><a href="#">Messages</a></li>
+                    <li>Home</li>
+                    <li>Discover</li>
+                    <li>Projects</li>
+                    <li>Invoices</li>
+                    <li>Clients</li>
+                    <li>Messages</li>
                 </ul>
             </div>
         </div>

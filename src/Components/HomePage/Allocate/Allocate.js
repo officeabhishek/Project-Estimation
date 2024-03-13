@@ -3,7 +3,7 @@ import "./Allocate.css"
 
 const Allocate = ()=>{
   const [solution, setSolution] = useState('');
-  const [requirements, setRequirements] = useState([
+  const [requirements] = useState([
     { value: 'Development', label: 'Fresh Development' },
     { value: 'Refresher', label: 'Refresher' },
     { value: 'Content', label: 'Content Updates' },

@@ -53,9 +53,9 @@ const ReportCenter = () => {
                         <tbody>
                         <tr className="tr-primary open">
                             <td colspan="9">
-                            <a className="report-collapse-trigger">
+                            <p className="report-collapse-trigger">
                                 <i className="fas fa-caret-right"></i>
-                            </a>
+                            </p>
                             Bonnet/hood</td>
 
                         </tr>
@@ -81,9 +81,9 @@ const ReportCenter = () => {
 
                         <tr className="tr-primary open">
                             <td colspan="9">
-                                <a className="report-collapse-trigger">
+                                <p className="report-collapse-trigger">
                                     <i className="fas fa-caret-right"></i>
-                                </a>
+                                </p>
                                 Front Bumpber Bracket
                             </td>
                         </tr>
@@ -111,9 +111,9 @@ const ReportCenter = () => {
                         
                             <tr className="tr-primary open">
                             <td colspan="9">
-                            <a className="report-collapse-trigger">
+                            <p className="report-collapse-trigger">
                                 <i className="fas fa-caret-right"></i>
-                            </a>
+                            </p>
                             Front Bumpber Bracket</td>
 
                         </tr>

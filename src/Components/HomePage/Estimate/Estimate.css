@@ -1,29 +1,164 @@
 .Estimate{
 	height: 100%;
-    display: flex;
-    align-items: center;
-    background-color: #3498db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3498db;
 }
 
-.Estimate-left{
-    background-color: antiquewhite;
-    flex: 1;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.Estimate-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 0.8;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #ffffff;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.Estimate-left-title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: #00bfff;
+}
+
+.Estimate-left-title::before {
+  width: 18px;
+  height: 18px;
+}
+
+.error-message{
+  color: red;
+}
+
+.Estimate-left-title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.Estimate-left-title::before,
+.Estimate-left-title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #00bfff;
+}
+
+.Estimate-left-message, 
+.signin {
+  font-size: 14.5px;
+  color: rgb(0, 0, 0);
+}
+
+.signin {
+  text-align: center;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.signin a {
+  color: #00bfff;
+}
+
+.Estimate-left-flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.Estimate-left label {
+  position: relative;
+}
+
+.Estimate-left label .Estimate-left-flex-input {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.Estimate-left label  .Estimate-left-flex-input + span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.Estimate-left label .Estimate-left-flex-input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.Estimate-left label .Estimate-left-flex-input:focus + span,
+.Estimate-left label .Estimate-left-flex-input:valid + span {
+  color: #00bfff;
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.Estimate-left-flex-input {
+  font-size: medium;
+}
+
+.Estimate-left-submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #00bfff;
+}
+
+.stimate-left-submit:hover {
+  background-color: #00bfff96;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
 }
 
 .Estimate-right{
     height: 100%;
     flex: 1;
-    background-color: #e74c3c;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 form {
 	margin: 20px;
@@ -32,106 +167,7 @@ form {
     width: 60%;
 }
 
-.material {
-	position: relative;
-	padding: 0;
-	margin: 5px;
-    margin-top: 2rem;
-	border: none;
-	overflow: visible;
-	
-	input {
-		box-sizing: border-box;
-		width: 100%;
-		padding: 12px 10px 8px;
-		border: none;
-		border-radius: 0;
-		box-shadow: none;
-		border-bottom: 1px solid #DDD;
-		font-size: 120%;
-		outline: none;
-		cursor: text;
 
-		&::-webkit-input-placeholder {
-			transition: color 300ms ease;
-		}
-		&:not(:focus)::-webkit-input-placeholder {
-			color: transparent;
-		}
-	}
-	
-	hr {
-		content: '';
-		display: block;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		height: 2px;
-		border: none;
-		background: #607D8B;
-		font-size: 1px;
-		will-change: transform, visibility;
-		transition: all 200ms ease-out;
-		transform: scaleX(0);
-		visibility: hidden;
-		z-index: 10;
-	}
-	input:focus ~ hr {
-		transform: scaleX(1);
-		visibility: visible;
-	}
-	
-	label {
-		position: absolute;
-		top: 10px;
-		left: 10px;
-		font-size: 120%;
-		color: #607D8B;
-		transform-origin: 0 -150%;
-		transition: transform 300ms ease;
-		pointer-events: none;
-	}
-	input:focus ~ label,
-	input:valid ~ label {
-		transform: scale(0.6);
-	}
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 50px;
-    margin: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 4px;
-  }
-.transparent {
-    background-color: transparent;
-    color: #3498db;
-    border: 2px solid #3498db;
-}
-
-.transparent:hover {
-    background-color: #3498db;
-    color: #fff;
-}
-
-.transparent-bg {
-    background-color: transparent;
-    color: #e74c3c;
-    border: 2px solid #e74c3c;
-  }
-  
-.transparent-bg:hover {
-    background-color: #e74c3c;
-    color: #fff;
-}
 
 
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap");

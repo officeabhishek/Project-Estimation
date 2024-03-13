@@ -1,6 +1,11 @@
 import React, { useState } from 'react';  
 import './Table.css'
-  
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
+import { useNavigate } from "react-router-dom"
+
 const Table = ({ data }) => {   
   const [searchTerm, setSearchTerm] = useState('');  
   const [filteredData, setFilteredData] = useState(data);  
@@ -8,6 +13,8 @@ const Table = ({ data }) => {
   const [selectedRows, setSelectedRows] = useState([]);  
   const [filters, setFilters] = useState({});  
   
+  const navigate = useNavigate();
+
   const handleSearch = (e) => {  
     const term = e.target.value.toLowerCase();
     setSearchTerm(term);  
@@ -75,6 +82,7 @@ const Table = ({ data }) => {
   };  
   
   const handleSubmit = () => {  
+    navigate("/identify")
     console.log('Selected Rows:', selectedRows);  
   };
   
@@ -90,30 +98,57 @@ const Table = ({ data }) => {
         />  
       </div> 
       <div className='table-priorityBox'>  
-        <label className='table-priorityBox_label'>Priority Skill 1</label>  
-        <input  
-          type="text"  
-          name="ps1"  
-          value={filters.ps1 || ''}  
-          onChange={handleFilterChange}  
-          className='table-priorityBox_input'
-        />  
-        <label className='table-priorityBox_label'>Priority Skill 2</label>  
-        <input  
-          type="text"  
-          name="ps2"  
-          value={filters.ps2 || ''}  
-          onChange={handleFilterChange}
-          className='table-priorityBox_input'  
-        />  
-        <label className='table-priorityBox_label'>Priority Skill 3</label>  
-        <input  
-          type="text"  
-          name="ps3"  
-          value={filters.ps3 || ''}  
-          onChange={handleFilterChange}  
-          className='table-priorityBox_input'
-        />  
+        <FormControl sx={{ s: 1, minWidth: 200 }} size="small">
+          <InputLabel id="demo-select-small-label">Priority Skill 1</InputLabel>
+          <Select
+            labelId="demo-select-small-label"
+            id="demo-select-small"
+            // value={age}
+            label="Age"
+            // onChange={handleChange}
+          >
+            <MenuItem value="">
+              <em>None</em>
+            </MenuItem>
+            <MenuItem value={10}>Ten</MenuItem>
+            <MenuItem value={20}>Twenty</MenuItem>
+            <MenuItem value={30}>Thirty</MenuItem>
+          </Select>
+        </FormControl>
+        <FormControl sx={{ s: 1, minWidth: 200 }} size="small">
+          <InputLabel id="demo-select-small-label">Priority Skill 2</InputLabel>
+          <Select
+            labelId="demo-select-small-label"
+            id="demo-select-small"
+            // value={age}
+            label="Age"
+            // onChange={handleChange}
+          >
+            <MenuItem value="">
+              <em>None</em>
+            </MenuItem>
+            <MenuItem value={10}>Ten</MenuItem>
+            <MenuItem value={20}>Twenty</MenuItem>
+            <MenuItem value={30}>Thirty</MenuItem>
+          </Select>
+        </FormControl>
+        <FormControl sx={{ s: 1, minWidth: 200 }} size="small">
+          <InputLabel id="demo-select-small-label">Priority Skill 2</InputLabel>
+          <Select
+            labelId="demo-select-small-label"
+            id="demo-select-small"
+            // value={age}
+            label="Age"
+            // onChange={handleChange}
+          >
+            <MenuItem value="">
+              <em>None</em>
+            </MenuItem>
+            <MenuItem value={10}>Ten</MenuItem>
+            <MenuItem value={20}>Twenty</MenuItem>
+            <MenuItem value={30}>Thirty</MenuItem>
+          </Select>
+        </FormControl> 
         <button onClick={applyFilters} className='table_buttons'>Apply Filters</button>  
         <button onClick={handleReset} className='table_buttons'>Reset</button>
         <button onClick={handleSort} className='table_buttons'>Sort</button>  

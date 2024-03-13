@@ -12,12 +12,12 @@ const Header = ()=>{
                     <span className="line line3"></span>
                 </div>
                 <ul className="menu-items">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Category</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">PWC</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Category</li>
+                    <li>Menu</li>
+                    <li>PWC</li>
+                    <li>Contact</li>
                 </ul>
                 <h1 className="logo">PWC LOGO</h1>
             </div>    
