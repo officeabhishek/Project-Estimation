@@ -82,7 +82,7 @@ const Table = ({ data }) => {
   };  
   
   const handleSubmit = () => {  
-    navigate("/identify")
+    navigate("/allocate")
     console.log('Selected Rows:', selectedRows);  
   };
   
@@ -200,7 +200,7 @@ const Table = ({ data }) => {
         </tbody>  
       </table>  
       {selectedRows.length > 0 && (  
-        <button onClick={handleSubmit} className='table_buttons'>Submit</button>  
+        <button onClick={handleSubmit} className='table_buttons' >Request for allocation</button>  
       )} 
     </div>  
   );  

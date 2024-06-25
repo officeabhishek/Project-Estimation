@@ -3,10 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
-    background-color: rgb(43, 43, 43);
-    height: 100%;
-    width: 100%;
+    background-color: #dedede;
+    height: 100vh;
 }
 
 .Homepage-main{
@@ -14,8 +12,8 @@
     align-items: center; 
     justify-content: space-between;
     width: 100%;
-    margin-top: 3rem;
-    height: 80vh;
+    /* margin-top: 3rem; */
+    height: 100%;
 }
 
 .Homepage_optionsMain{
@@ -23,8 +21,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
-    margin-left: 10%;
+    gap: 2rem;
+    margin-left: 5%;
 }
 
 .Homepage-secondary{
@@ -49,9 +47,9 @@
 
 .options{
     position: relative;
-    background-color: rgb(255, 244, 244);
-    height: 200px;
-    width: 270px;
+    background-color: #d04a02;
+    height: 110px;
+    width: 170px;
 }
 
 .options-below{
@@ -67,7 +65,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 700;
-    color: rgb(60, 60, 60);
+    color: #dedede
 }

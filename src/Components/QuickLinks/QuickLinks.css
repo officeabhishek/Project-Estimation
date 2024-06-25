@@ -1,7 +1,7 @@
 .QuickLinks{
     height: 100%;
-    background-color: rgb(71, 71, 71);
-    color: rgb(172, 172, 172);
+    background-color: #7d7d7d;
+    color: #ffffff;
     width: 20%;
     height: 100%;
 }
@@ -23,7 +23,7 @@
 
 .list li:hover{
     border-radius: 5px;
-    background-color: #d1d1d1;
+    background-color: #4b4b4b;
 }
 
 .list a{

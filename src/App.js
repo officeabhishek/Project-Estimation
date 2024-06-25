@@ -2,7 +2,6 @@ import './App.css';
 import HomePage from './Components/HomePage/HomePage';
 import Allocate from './Components/HomePage/Allocate/Allocate';
 import Estimate from './Components/HomePage/Estimate/Estimate';
-// import Desktop3  from './Components/Desktop3/Desktop3.tsx';
 import ProjectCenter from './Components/ProjectCenter/ProjectCenter.js';
 import ReportCenter from './Components/ReportCenter/ReportCenter.js';
 import { BrowserRouter as Router, Routes, Route,} from 'react-router-dom';
